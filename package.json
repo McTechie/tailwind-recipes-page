@@ -1,10 +1,11 @@
 {
-  "name": "tailwind-recipes-site",
+  "name": "tailwind-recipes-page",
   "version": "1.0.0",
   "description": "A webpage to showcase a list of recipes using Tailwind CSS",
   "main": "index.html",
   "scripts": {
-    "tw-build": "tailwindcss build src/styles.css -o public/styles.css"
+    "tw-build": "tailwindcss build src/styles.css -o public/styles.css",
+    "dev": "live-server public"
   },
   "author": "mcvean soans",
   "license": "ISC",

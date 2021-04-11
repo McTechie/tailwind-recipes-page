@@ -12,37 +12,42 @@
     <div class="grid md:grid-cols-4">
 
         <!-- navigation -->
-        <div class="md:col-span-1">
-            <nav>
-                <div>
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="text-right">
+                <div class="flex justify-between items-center">
                     <h1 class="font-bold uppercase p-4 border-b border-gray-100">
                         <a href="/" class="hover:text-gray-600">Food Techie</a>
                     </h1>
+                    <div class="px-4 cursor-pointer md:hidden" id="burger">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </div>
                 </div>
-                <ul>
-                    <li class="text-gray-700 font-bold">
-                        <a href="#">
+                <ul class="text-sm mt-6 hidden md:block" id="menu">
+                    <li class="text-gray-700 font-bold py-2">
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-primary hover:shadow-md">
                             <span>Home</span>
-                            <svg class="w-5" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                 <path
                                     d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="py-2">
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-white hover:shadow-md">
                         <span>About</span>
-                        <svg class="w-5" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd"
                                 d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
                                 clip-rule="evenodd" />
                         </svg>
                     </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="py-2">
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-white hover:shadow-md">
                         <span>Contact</span>
-                        <svg class="w-5" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                             <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                             <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                         </svg>
@@ -55,8 +60,8 @@
         <!-- main content -->
         <main class="px-16 py-6 bg-gray-100 md:col-span-3">
             <div class="flex justify-center md:justify-end">
-                <a href="#" class="btn text-primary border-primary md:border-2 hover:shadow-md">Login</a>
-                <a href="#" class="btn text-primary md:text-white md:bg-primary ml-2 border-primary md:border-2 hover:shadow-md">Sign Up</a>
+                <a href="#" class="btn text-primary border-primary md:border-2 hover:shadow-lg transition ease-out duration-300">Login</a>
+                <a href="#" class="btn text-primary md:text-white md:bg-primary ml-2 border-primary md:border-2 hover:shadow-lg transition ease-out duration-300">Sign Up</a>
             </div>
             
             <header>
@@ -67,7 +72,7 @@
             <div>
                 <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
                 <div class="mt-8 grid md:grid-cols-3 gap-10">
-                    <div class="card hover:shadow-lg">
+                    <div class="card hover:shadow-lg transition ease-linear transform hover:scale-105">
                         <img src="img/stew.jpg" alt="stew" class="w-full h-32 md:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">5 Bean Chilli Stew</span>
@@ -81,7 +86,7 @@
                             <span class="mt-2">25 mins</span>
                         </div>
                     </div>
-                    <div class="card hover:shadow-lg">
+                    <div class="card hover:shadow-lg transition ease-linear transform hover:scale-105">
                         <img src="img/noodles.jpg" alt="noodles" class="w-full h-32 md:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Lo Mein</span>
@@ -95,7 +100,7 @@
                             <span class="mt-2">25 mins</span>
                         </div>
                     </div>
-                    <div class="card hover:shadow-lg">
+                    <div class="card hover:shadow-lg transition ease-linear transform hover:scale-105">
                         <img src="img/curry.jpg" alt="curry" class="w-full h-32 md:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Tofu Curry</span>
@@ -117,10 +122,11 @@
                 </div>
                 
                 <div class="flex justify-center">
-                    <div class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner">Load More</div>
+                    <div class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner transform hover:scale-110 hover:bg-opacity-60 transition ease-out duration-300">Load More</div>
                 </div>
             </div>
         </main>
     </div>
+    <script src='index.js'></script>
 </body>
 </html>

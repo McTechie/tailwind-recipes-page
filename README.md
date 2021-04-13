@@ -2,7 +2,7 @@
 
 # Techie Recipes
 
-> A McTechie creation
+> ✨ A McTechie creation 👨‍🎨
 
 ### Tech Used
 
@@ -10,9 +10,13 @@
 - [x] JavaScript
 - [x] **Tailwind** (CSS framework)
 
+---
+
 ### Desktop View
 
 ![Recipes](./assets/desktop_view.png)
+
+---
 
 ### Mobile View
 

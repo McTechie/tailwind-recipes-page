@@ -2,7 +2,7 @@
 
 # Techie Recipes
 
-> A McTechie creation 👨‍🎨✨
+> A **McTechie** creation 👨‍🎨✨
 
 ### Tech Used
 
